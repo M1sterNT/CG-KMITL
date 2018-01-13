@@ -1,7 +1,7 @@
 # CG-KMITL
 > Computer Graphics Course (2-2018), Computer Science, KMITL
 
-![alt text](https://github.com/PnXGUiDE/CG-KMITL/blob/master/src/img/CG_Lab1.png?raw=true)
+<img src="https://github.com/PnXGUiDE/CG-KMITL/blob/master/src/img/CG_Lab1.png?raw=true" width=600px></img>
 
 * Used for educational purpose, feel free to use it.
 * At least, Please try to do it by yourself first before see those code.
