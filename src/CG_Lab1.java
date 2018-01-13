@@ -133,7 +133,8 @@ class GraphicsSwing extends JPanel{
 
         for(int x = x1; x <= x2; x++){
             plot(g,x,y);
-            while(D >= 0){
+
+            if(D >= 0){
                 y++;
                 D -= 2 * dx;
             }
