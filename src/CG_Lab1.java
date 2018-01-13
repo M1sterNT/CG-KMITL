@@ -2,7 +2,9 @@ import java.awt.*;
 import javax.swing.*;
 
 public class CG_Lab1{
-
+    //For purpose of Studying in Computer Graphics Course (2/2018) at Computer Science, KMITL
+    //Created by Yuttapichai Kerdcharoen (PnX)
+    //Not recommend to copy this code without trying by yourself first
 }
 
 class GraphicsSwing extends JPanel{
