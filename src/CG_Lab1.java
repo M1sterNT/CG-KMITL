@@ -4,7 +4,7 @@ import javax.swing.*;
 public class CG_Lab1{
     //For purpose of Studying in Computer Graphics Course (2/2018) at Computer Science, KMITL
     //Created by Yuttapichai Kerdcharoen (PnX)
-    //Not recommend to copy this code without trying by yourself first
+    //Not recommend to copy this code without trying by yourself
 }
 
 class GraphicsSwing extends JPanel{
@@ -20,7 +20,7 @@ class GraphicsSwing extends JPanel{
     }
 
     public void paintComponent(Graphics g){
-        //TODO: Adding your Graphics Here
+        //TODO: Add your Graphics Here
 
         //Create Border
         g.setColor(Color.red);
