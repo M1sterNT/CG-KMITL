@@ -125,20 +125,37 @@ class GraphicsSwing extends JPanel{
             y2 = tmpy;
         }
 
-        float dx = x2 - x1;
-        float dy = y2 - y1;
-        float D = 2 * dy - dx;
+        int dx = x2 - x1;
+        int dy = y2 - y1;
+        int D = 2 * dy - dx;
 
-        int y = y1;
+        float m = dy / dx;
 
-        for(int x = x1; x <= x2; x++){
-            plot(g,x,y);
+        int x = x1, y = y1;
 
-            if(D >= 0){
-                y++;
-                D -= 2 * dx;
+        if(m <= 1 && m >= 0){
+            for(; x <= x2; x++){
+                plot(g,x,y);
+
+                if(D >= 0){
+                    y++;
+                    D -= 2 * dx;
+                }
+
+                D += 2 * dy;
             }
-            D += 2 * dy;
+        }
+        else if(m > 1) {
+            for(; y <= y2; y++){
+                plot(g,x,y);
+
+                if(D >= 0){
+                    x++;
+                    D -= 2 * dy;
+                }
+
+                D += 2 * dx;
+            }
         }
     }
 }
