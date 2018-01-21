@@ -103,6 +103,8 @@ public class Assignment_ID extends JPanel{
         /*8*/ createGraphics(g, new Vector(526, 237), new Vector(562, 219), '6');
         /*4*/ createGraphics(g, new Vector(562, 219), new Vector(600, 200), '8');
 
+
+
         shadowBorder(g,70);
     }
 
@@ -329,7 +331,8 @@ public class Assignment_ID extends JPanel{
             bresenhamLine(g, new Vector(i.x - BUILDING_SIZE + a, i.y + a / 2), new Vector(i.x + a, i.y - BUILDING_SIZE / 2 + a / 2));
             bresenhamLine(g, new Vector(i.x + BUILDING_SIZE - a, i.y + a / 2), new Vector(i.x - a, i.y - BUILDING_SIZE / 2 + a / 2));
 
-            // /*COINCIDENTAL EPIC CURVE*/ bresenhamLine(g, new Vector(i.x + BUILDING_SIZE - a, i.y - a / 2), new Vector(i.x - a, i.y - BUILDING_SIZE / 2 + a / 2));
+            g.setColor(Color.darkGray);
+            /*COINCIDENTAL EPIC CURVE*/ bresenhamLine(g, new Vector(i.x + BUILDING_SIZE - a, i.y - a / 2), new Vector(i.x - a, i.y - BUILDING_SIZE / 2 + a / 2));
         }
     }
 
